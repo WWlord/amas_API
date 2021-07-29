@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServicesAMAS", "WebServicesAMAS\WebServicesAMAS.csproj", "{01B83418-5894-4395-822C-1CF1CC24FBC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationAMAS", "WebApplicationAMAS\WebApplicationAMAS.csproj", "{CC0F8B28-9144-4835-8916-7D5DF0C48676}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01B83418-5894-4395-822C-1CF1CC24FBC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B83418-5894-4395-822C-1CF1CC24FBC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B83418-5894-4395-822C-1CF1CC24FBC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01B83418-5894-4395-822C-1CF1CC24FBC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC0F8B28-9144-4835-8916-7D5DF0C48676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC0F8B28-9144-4835-8916-7D5DF0C48676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC0F8B28-9144-4835-8916-7D5DF0C48676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC0F8B28-9144-4835-8916-7D5DF0C48676}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

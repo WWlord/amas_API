@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2D282430-0519-471F-8434-0FEC08D0D51D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClassPattern</RootNamespace>
+    <AssemblyName>ClassPattern</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="baseLayer\PatSetting.cs" />
+    <Compile Include="ClassPatterns.cs" />
+    <Compile Include="Editor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editor.Designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileSystemShow.cs" />
+    <Compile Include="Pattern.cs" />
+    <Compile Include="PictersLibrary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PictersLibrary.Designer.cs">
+      <DependentUpon>PictersLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassAMAS_API\ClassAMAS_DBI.csproj">
+      <Project>{7CE4D617-C525-4097-813B-F9DCC2D4B4BE}</Project>
+      <Name>ClassAMAS_DBI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassErrorProvider\ClassErrorProvider.csproj">
+      <Project>{0749B321-9588-4869-AA61-AD4DCA4A794A}</Project>
+      <Name>ClassErrorProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonValues\CommonValues\CommonValues.csproj">
+      <Project>{393ED79D-C72B-4E1A-A1FD-20079FFC33DB}</Project>
+      <Name>CommonValues</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PictersLibrary.resx">
+      <DependentUpon>PictersLibrary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLIP03.ICO" />
+    <None Include="Resources\CALENDAR.BMP" />
+    <None Include="Resources\DOC.BMP" />
+    <None Include="Resources\BLD.BMP" />
+    <None Include="Resources\BUTTON.BMP" />
+    <None Include="Resources\COPY.BMP" />
+    <None Include="Resources\DELETE.BMP" />
+    <None Include="Resources\CNT.BMP" />
+    <None Include="Resources\DISCNET.BMP" />
+    <None Include="Resources\DELETE1.BMP" />
+    <None Include="Resources\DISK03.ICO" />
+    <None Include="Resources\ARW05LT.ICO" />
+    <None Include="Resources\ARW05RT.ICO" />
+    <Content Include="Resources\Edit.ICO" />
+    <None Include="Resources\FONT02.ICO" />
+    <None Include="Resources\ENVELOPE.BMP" />
+    <None Include="Resources\EXPLORER.BMP" />
+    <None Include="Resources\FIND.BMP" />
+    <None Include="Resources\FRONT.BMP" />
+    <None Include="Resources\FOLDER02.ICO" />
+    <Content Include="Resources\Get.ICO" />
+    <None Include="Resources\none.ico" />
+    <None Include="Resources\VW-DTLS.BMP" />
+    <None Include="Resources\RECTANGL.BMP" />
+    <None Include="Resources\REMTEACC.ICO" />
+    <None Include="Resources\MINUS1.BMP" />
+    <None Include="Resources\PLUS1.BMP" />
+    <None Include="Resources\WASTE.ICO" />
+    <None Include="Resources\SAVE11.BMP" />
+    <None Include="Resources\TAB-LEFT1.BMP" />
+    <None Include="Resources\UNDO1.BMP" />
+    <None Include="Resources\REDO1.BMP" />
+    <None Include="Resources\GROUP1.BMP" />
+    <None Include="Resources\HAND1.BMP" />
+    <None Include="Resources\TIME1.BMP" />
+    <None Include="Resources\SAVE1.BMP" />
+    <None Include="Resources\TAB-LEFT.BMP" />
+    <None Include="Resources\UNDO.BMP" />
+    <None Include="Resources\SPELLING.BMP" />
+    <None Include="Resources\SORTDES.BMP" />
+    <None Include="Resources\SORTASC.BMP" />
+    <None Include="Resources\REDO.BMP" />
+    <None Include="Resources\PASTE.BMP" />
+    <None Include="Resources\MCR.BMP" />
+    <None Include="Resources\GROUP.BMP" />
+    <None Include="Resources\WASTE.BMP" />
+    <None Include="Resources\HLP.BMP" />
+    <None Include="Resources\OPEN.BMP" />
+    <None Include="Resources\LEAF.BMP" />
+    <None Include="Resources\PRESENT.BMP" />
+    <None Include="Resources\PLAN.BMP" />
+    <None Include="Resources\NOTEBOOK.BMP" />
+    <None Include="Resources\MAIL.BMP" />
+    <None Include="Resources\KEY.BMP" />
+    <None Include="Resources\HAND.BMP" />
+    <None Include="Resources\TIME.BMP" />
+    <None Include="Resources\SAVE.BMP" />
+    <None Include="Resources\SHARING.BMP" />
+    <None Include="Resources\TXT.BMP" />
+    <None Include="Resources\MINUS.BMP" />
+    <None Include="Resources\PLUS.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBA">
+      <Guid>{000204EF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>9</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

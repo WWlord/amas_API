@@ -1,0 +1,12 @@
+﻿<Window x:Class="WpfControlLibraryAMAS.WinAMASDocWPF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WinAMASDocWPF" Height="331" Width="465">
+    <Grid>
+        <TabControl Height="280" HorizontalAlignment="Left" Margin="0,12,0,0" Name="tabControl1" VerticalAlignment="Top" Width="443">
+            <TabItem Header="tabItem1" Name="tabItem1">
+                <Grid />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

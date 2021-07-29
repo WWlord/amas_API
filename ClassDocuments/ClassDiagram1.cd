@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.4" />
+  <Class Name="AMASDocuments.ClassDocsItem">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ClassDocument.cs</FileName>
+      <HashCode>UmghADBRgEBCAKAEQFEgAQAgnJAIAB0TsAQgIFEACAg=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="AMASDocuments.ClassDocsItem.refer_NodeToDoc" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ClassDocument.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="AMASDocuments.ClassDocsItem.DocTask">
+        <TypeIdentifier>
+          <NewMemberFileName>ClassDocument.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="AMASDocuments.ClassDocsItem.DocViza">
+        <TypeIdentifier>
+          <NewMemberFileName>ClassDocument.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="AMASDocuments.ClassDocsItem.DocNew">
+        <TypeIdentifier>
+          <NewMemberFileName>ClassDocument.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="AMASDocuments.SelectDocuments.ClassSelectDocuments">
+    <Position X="3.25" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>ClassSelectDocuments.cs</FileName>
+      <HashCode>AAABAABBAAAAAAAAAACAABgAgAAAAAAAQAAgAQAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

@@ -1,0 +1,19 @@
+
+-----  Ѕезопасность  ---------
+
+1. ƒл€ обеспечени€ просмотра списка ролей, назначенных разным пользовател€м,
+ необходимо включить роль Security в роль db_securityadmin.
+ 
+2. ƒл€ предоставлени€ возможности внесени€ учетной (login) записи в базу данных MS SQL 
+необходимо назначить пользователю право <alter any login> через databases->login->
+security->им€ пользовател€-> properties->securable->add->the server 'им€ сервера'.
+ƒобавить роль: через databases->'им€ базы'->security->users->им€ пользовател€-> 
+properties->general->role member в роли db_accessAdmin выставить галочку.
+
+»наче: вставить в им€ входа роль сервера securityadmin, а дл€ пользовател€ db_accessadmin и db_securityadmin выставить галочку.
+
+пользователь сервера - db_securityadmin
+пользователь базы данных  db_accessadmin и db_securityadmin
+
+3. ѕри генерации бд в таблицу agent необходимо внести запись.
+

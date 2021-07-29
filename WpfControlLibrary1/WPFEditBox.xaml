@@ -1,0 +1,43 @@
+﻿<UserControl HorizontalAlignment="Left" VerticalAlignment="Top" x:Class="WpfControlLibraryAMAS.WPFEditBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="192" Width="359.4" Name="TxtBoxReflex">
+    <StackPanel Orientation="Vertical" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Height="156" Width="360">
+        <StackPanel  Name="reflectedPanel" Orientation="Horizontal" Height="78" Width="333" RenderTransformOrigin="0.5,0.5">
+        	<StackPanel.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform ScaleX="1" ScaleY="1"/>
+        			<SkewTransform AngleX="14" AngleY="0"/>
+        			<RotateTransform Angle="-5"/>
+        			<TranslateTransform X="0" Y="0"/>
+        		</TransformGroup>
+        	</StackPanel.RenderTransform>
+            <TextBox Name="txtBox" Width="200" FontSize="30" TextChanged="txtBox_TextChanged">Reflections...</TextBox>
+            <Button Click="btn_Click" Name="btn">
+                <MediaElement Loaded="myVideo_Loaded" MediaEnded="myVideo_MediaEnded" LoadedBehavior="Manual" Name="myVideo" Source="Bear.wmv"  Width="125" Height="78" />
+            </Button>
+        </StackPanel>
+        <StackPanel  Width="360" Height="78">
+            <StackPanel.Background>
+                <VisualBrush Stretch="None" Opacity="0.75"  AlignmentX="Left" AlignmentY="Top"
+				  Visual="{Binding ElementName=reflectedPanel}">
+                    <VisualBrush.RelativeTransform>
+                        <TransformGroup>
+                            <MatrixTransform Matrix="1,0,0,-1,0,0" />
+                            <TranslateTransform Y="1" />
+                        </TransformGroup>
+                    </VisualBrush.RelativeTransform>
+                </VisualBrush>
+            </StackPanel.Background>
+
+            <StackPanel.OpacityMask>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#FF000000" Offset="0.0" />
+                        <GradientStop Color="#00000000" Offset="1" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </StackPanel.OpacityMask>
+        </StackPanel>       
+    </StackPanel>
+</UserControl>

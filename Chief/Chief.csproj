@@ -1,0 +1,270 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F679DC03-66DB-44E3-9FEF-40662B232FED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chief</RootNamespace>
+    <AssemblyName>Chief</AssemblyName>
+    <ApplicationIcon>GRAPH14.ICO</ApplicationIcon>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>http://localhost/Chief/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Address.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Address.Designer.cs">
+      <DependentUpon>Address.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baseLayer\FormSettings.cs" />
+    <Compile Include="Chef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chef.Designer.cs">
+      <DependentUpon>Chef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutDocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutDocs.Designer.cs">
+      <DependentUpon>OutDocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel.Designer.cs">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration_in.Designer.cs">
+      <DependentUpon>Registration_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources.Designer.cs">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rights.Designer.cs">
+      <DependentUpon>Rights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StructORG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StructORG.Designer.cs">
+      <DependentUpon>StructORG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConnect.Designer.cs">
+      <DependentUpon>FormConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master.Designer.cs">
+      <DependentUpon>Master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organizations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organizations.Designer.cs">
+      <DependentUpon>Organizations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Population.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Population.Designer.cs">
+      <DependentUpon>Population.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Address.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Address.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chef.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Chef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutDocs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OutDocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration_in.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Registration_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rights.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Rights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StructORG.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StructORG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConnect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organizations.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Organizations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Population.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Population.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GRAPH14.ICO" />
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="Resources\PENCIL08.ICO" />
+    <None Include="Resources\ARW11NW.ICO" />
+    <None Include="Resources\CRDFLE04.ICO" />
+    <None Include="Resources\DISKS03.ICO" />
+    <None Include="Resources\SECUR07.ICO" />
+    <None Include="Resources\MISC29.ICO" />
+    <None Include="Resources\MISC28.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AMASControlRegisters\AMASControlRegisters.csproj">
+      <Project>{24F36A18-373B-45C4-A3FC-5EB4054F2C54}</Project>
+      <Name>AMASControlRegisters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassAMAS_API\ClassAMAS_DBI.csproj">
+      <Project>{7CE4D617-C525-4097-813B-F9DCC2D4B4BE}</Project>
+      <Name>ClassAMAS_DBI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassDocuments\ClassDocuments.csproj">
+      <Project>{72269F67-D4CA-48CE-9CB4-103E303D0D22}</Project>
+      <Name>ClassDocuments</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassErrorProvider\ClassErrorProvider.csproj">
+      <Project>{0749B321-9588-4869-AA61-AD4DCA4A794A}</Project>
+      <Name>ClassErrorProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassPattern\ClassPattern.csproj">
+      <Project>{2D282430-0519-471F-8434-0FEC08D0D51D}</Project>
+      <Name>ClassPattern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassStructure\ClassStructure.csproj">
+      <Project>{F994EB41-1F7A-4B29-A8F6-7C3D24FCC90E}</Project>
+      <Name>ClassStructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonValues\CommonValues\CommonValues.csproj">
+      <Project>{393ED79D-C72B-4E1A-A1FD-20079FFC33DB}</Project>
+      <Name>CommonValues</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.1.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

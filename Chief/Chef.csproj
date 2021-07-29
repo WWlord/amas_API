@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F679DC03-66DB-44E3-9FEF-40662B232FED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chief</RootNamespace>
+    <AssemblyName>Chief</AssemblyName>
+    <ApplicationIcon>GRAPH14.ICO</ApplicationIcon>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>amas.pfx</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/Chief/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Address.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Address.Designer.cs">
+      <DependentUpon>Address.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baseLayer\FormSettings.cs" />
+    <Compile Include="BusinessTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessTasks.Designer.cs">
+      <DependentUpon>BusinessTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusnessProcesses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusnessProcesses.Designer.cs">
+      <DependentUpon>BusnessProcesses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chef.Designer.cs">
+      <DependentUpon>Chef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAutor.Designer.cs">
+      <DependentUpon>EditAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditOutcoming.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditOutcoming.Designer.cs">
+      <DependentUpon>EditOutcoming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmBusynessPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmBusynessPro.Designer.cs">
+      <DependentUpon>FmBusynessPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMovingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMovingList.Designer.cs">
+      <DependentUpon>FormMovingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KLADR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KLADR.Designer.cs">
+      <DependentUpon>KLADR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSeekEmDep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSeekEmDep.Designer.cs">
+      <DependentUpon>FormSeekEmDep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSAddress.Designer.cs">
+      <DependentUpon>GSAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GSOrganisation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GSOrganisation.Designer.cs">
+      <DependentUpon>GSOrganisation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JournalWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JournalWelcome.Designer.cs">
+      <DependentUpon>JournalWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="License.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="License.Designer.cs">
+      <DependentUpon>License.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutDocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutDocs.Designer.cs">
+      <DependentUpon>OutDocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel.Designer.cs">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration_in.Designer.cs">
+      <DependentUpon>Registration_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources.Designer.cs">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rights.Designer.cs">
+      <DependentUpon>Rights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StructORG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StructORG.Designer.cs">
+      <DependentUpon>StructORG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConnect.Designer.cs">
+      <DependentUpon>FormConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master.Designer.cs">
+      <DependentUpon>Master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Organizations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Organizations.Designer.cs">
+      <DependentUpon>Organizations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Population.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Population.Designer.cs">
+      <DependentUpon>Population.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Address.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Address.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessTasks.resx">
+      <DependentUpon>BusinessTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusnessProcesses.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BusnessProcesses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chef.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Chef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAutor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditOutcoming.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditOutcoming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmBusynessPro.resx">
+      <DependentUpon>FmBusynessPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMovingList.resx">
+      <DependentUpon>FormMovingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KLADR.resx">
+      <DependentUpon>KLADR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSeekEmDep.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSeekEmDep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSAddress.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GSAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GSOrganisation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GSOrganisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JournalWelcome.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>JournalWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="License.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>License.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutDocs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OutDocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration_in.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Registration_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rights.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Rights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StructORG.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StructORG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConnect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organizations.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Organizations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Population.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Population.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GRAPH14.ICO" />
+    <None Include="Resources\Annotate_Complete.ico" />
+    <None Include="Resources\Journal.ico" />
+    <None Include="Resources\keybd.ico" />
+    <None Include="Resources\zippedFile.png" />
+    <None Include="Resources\document.ico" />
+    <None Include="Resources\XSDSchema_GraphRightToLeft.png" />
+    <None Include="Resources\XSDSchema_GraphLeftToRight.png" />
+    <None Include="Resources\Publish.png" />
+    <None Include="Resources\Box.png" />
+    <None Include="Resources\Folder.ico" />
+    <None Include="Resources\Data_Schema.ico" />
+    <None Include="Resources\DataContainer_MovePreviousHS.png" />
+    <None Include="Resources\DataContainer_MoveNextHS.png" />
+    <None Include="Resources\search4people.ico" />
+    <None Include="Resources\NOTE09.ICO" />
+    <None Include="Resources\NOTE15.ICO" />
+    <None Include="Resources\CRDFLE12.ICO" />
+    <None Include="Resources\FACTORY.ICO" />
+    <None Include="Resources\HOUSE.ICO" />
+    <None Include="Resources\scanner.ico" />
+    <None Include="Resources\MAIL21B.ICO" />
+    <None Include="Resources\NET01.ICO" />
+    <None Include="Resources\KEY05.ICO" />
+    <None Include="Resources\INFO.ICO" />
+    <None Include="Resources\PEN04.ICO" />
+    <None Include="Resources\NOTE14.ICO" />
+    <None Include="Resources\BINOCULR.ICO" />
+    <None Include="Resources\BOOK05.ICO" />
+    <None Include="Resources\PORTRAIT.ICO" />
+    <None Include="Resources\RULERS.ICO" />
+    <None Include="Resources\CDROM01.ICO" />
+    <None Include="Resources\SAVE.BMP" />
+    <None Include="Resources\CALENDAR.BMP" />
+    <None Include="Resources\EXE.BMP" />
+    <None Include="Resources\LEAF.BMP" />
+    <None Include="Resources\COPY.BMP" />
+    <None Include="Resources\POINT07.ICO" />
+    <None Include="Resources\MINUS.BMP" />
+    <None Include="Resources\ELLIPSE.BMP" />
+    <None Include="Resources\DRAWING.BMP" />
+    <None Include="Resources\PLUS.BMP" />
+    <None Include="Resources\WORDUNDR.BMP" />
+    <None Include="Resources\PASTE.BMP" />
+    <None Include="Resources\NEW.BMP" />
+    <None Include="Resources\DELETE.BMP" />
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="amas.pfx" />
+    <None Include="app.config" />
+    <None Include="Resources\PENCIL08.ICO" />
+    <None Include="Resources\ARW11NW.ICO" />
+    <None Include="Resources\CRDFLE04.ICO" />
+    <None Include="Resources\DISKS03.ICO" />
+    <None Include="Resources\SECUR07.ICO" />
+    <None Include="Resources\MISC29.ICO" />
+    <None Include="Resources\MISC28.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AMASControlRegisters\AMASControlRegisters.csproj">
+      <Project>{24F36A18-373B-45C4-A3FC-5EB4054F2C54}</Project>
+      <Name>AMASControlRegisters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassAMAS_API\ClassAMAS_DBI.csproj">
+      <Project>{7CE4D617-C525-4097-813B-F9DCC2D4B4BE}</Project>
+      <Name>ClassAMAS_DBI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassDocuments\ClassDocuments.csproj">
+      <Project>{72269F67-D4CA-48CE-9CB4-103E303D0D22}</Project>
+      <Name>ClassDocuments</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassErrorProvider\ClassErrorProvider.csproj">
+      <Project>{0749B321-9588-4869-AA61-AD4DCA4A794A}</Project>
+      <Name>ClassErrorProvider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassPattern\ClassPattern.csproj">
+      <Project>{2D282430-0519-471F-8434-0FEC08D0D51D}</Project>
+      <Name>ClassPattern</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassStructure\ClassStructure.csproj">
+      <Project>{F994EB41-1F7A-4B29-A8F6-7C3D24FCC90E}</Project>
+      <Name>ClassStructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonValues\CommonValues\CommonValues.csproj">
+      <Project>{393ED79D-C72B-4E1A-A1FD-20079FFC33DB}</Project>
+      <Name>CommonValues</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TwainGui\TwainGui.csproj">
+      <Project>{CE179C13-DA23-42CD-9A6F-234E7F67BAF7}</Project>
+      <Name>TwainGui</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.1.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
