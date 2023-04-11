@@ -1,15 +1,3 @@
 # amas_API
-
-Данный проект относится к открытому программному обеспечению
-и может быть  использован на основании лицензии GNU 3.0
-Кроме представленного здесь проекта для работы СПР AMAS требуется база данных для MS SQL
-Я исповедую принциы индивидуальной свободы, изложенные в произведении "Атлант расправил плечи". 
-Поэтому никому и ни за что не расскажу те идеи, что мной еще не реализованы в данном проекте.
-Пусть лучше секрет верескового мёда умрет вместе с собой, чем кучка невежественных людей будет эксплуатировать мои идеи по своему усмотрению.
-Я не сомневаюсь в том, что результат их эксплуатации моих идей будут печальны как для них, так и обманутых пользователей этой системы.
-Чтобы правильно эксплуатировть систему, нужно общаться с автором, а не с его "последователями".
-Почему я опубликовал данный проект? Потому что его итак многажды его воровали и пробовали его эксплуатировать с разными результатами.
-Но все результаты их печальны, поскольку я никому ни разу не сказал, в чем идея этого продукта. Только я могу рассказать, что нужно делать,
-чтобы продукт блистательно решал ваши задачи. Поэтому яя жду 1. оплаты моего труда, 2. аудитории, которой я бы передал свои знания. 
-Если они будут достойны моего внмания.
-Прошу поддержать проект. Мой биткойн кошелек 3J2h56xQAnBcVbS8jX24gmpqHaozgXYrWx 
+This project belongs to open source software and can be used on the basis of the GNU 3.0 license. In addition to the project presented here, AMAS requires a database for MS SQL. Therefore, I will never tell anyone those ideas that I have not yet implemented in this project. I'd rather let the secret of heather honey die with it than a bunch of ignorant people exploit my ideas as they see fit. I have no doubt that the result of their exploitation of my ideas will be sad both for them and for the deceived users of this system. To properly operate the system, you need to communicate with the author, and not with his "followers". Why did I publish this project? Because it has been stolen and tried to be exploited so many times with various sad results, since I have never told anyone what the idea of this product is. Only I can know what needs to be done so that the product brilliantly solves your problems. Therefore, I am waiting for 1. payment for my work, 2. an audience to which I would transfer my knowledge. If they are worthy of my attention. 
+Please support this project. My bitcoin wallet is 3J2h56xQAnBcVbS8jX24gmpqHaozgXYrWx
